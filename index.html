@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoona - сеть отелей</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-contacts">
+            <div class="header-contacts_logo-tel">
+                <img src="pict/Logo.png" alt="Lagoona">
+                <a href="tel:+7495225448">+7 495 322 54 48</a>
+            </div>
+            <div class="header-login btn">
+                <a href="#">Личный кабинет</a>
+            </div>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <ul>
+                    <li><a class="link" href="#">О нас</a></li>
+                    <li><a class="link" href="#">Услуги</a></li>
+                    <li><a class="link" href="#">Преимущества</a></li>
+                    <li><a class="link" href="#">Размещение</a></li>
+                    <li><a class="link" href="#">Блог</a></li>
+                    <li><a class="link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <form class="header-form" action="#">
+                <input class="search-place" type="text" name="searchPlace" id="searchPlace" placeholder="Поиск">
+                <button class="header-form-btn btn"></button>
+            </form>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="reserv-block">
+            <h2>Быстрая бронь</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <div class="reserv-list">
+                    <input class="reserv-item" type="text" name="city-to-reserv" id="CityReserv" placeholder="Город" required>
+                    <!-- <datalist class="cities-list" id="cities">
+                        <option class="city-item" value="Москва"></option>
+                        <option class="city-item" value="Санкт-Петербург"></option>
+                        <option class="city-item" value="Казань"></option>
+                        <option class="city-item" value="Екатеринбург"></option>
+                        <option class="city-item" value="Калининград"></option>
+                    </datalist> -->
+                    <input class="reserv-item" type="text" name="appartment-to-reserv" id="AppartmentReserv" placeholder="Категория номера">
+                    <input class="reserv-item" type="text" onfocus="(this.type='date')" name="date-to-reserv" id="DateReserv" placeholder="Дата заселения">
+                    <input class="reserv-item" type="number" name="nights-to-reserv" id="NightsReserv" placeholder="Количество ночей">
+                    <input class="reserv-item" type="number" name="guests-to-reserv" id="GuestsReserv" placeholder="Количество гостей">
+                </div>
+                <div class="reserv-finder">
+                    <button class="btn" type="submit">Найти номер</button>
+                    <div class="reserv-offer-available"><span>9 756</span> предложений доступно</div>
+                </div>
+            </form>
+        </section>
+    
+        <section class="specific-offer-block">
+            <h2>Спецпредложение</h2>
+            <div class="specific-offer-main">
+                <h1>Номера категории люкс</h1>
+                <div class="specific-offer-price">
+                    <div class="offer-price">от 5 000 р</div>
+                    <a class="link" href="#">Подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="clear-block"></div>
+    
+        <section class="about-us-block">
+            <h2>О нас</h2>
+            <p>
+                Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.
+            </p>
+        </section>
+    
+        <section class="service-block">
+            <h2>Услуги</h2>
+            <div class="service-list">
+                <div class="service-item right-margin bottom-margin">
+                    <img class="service-img" src="pict/serv/10.png" alt="Предоставление бокалов игристого вина">
+                    <div class="service-item_descr">
+                        <h3><a class="link" href="#">Эксклюзивное обслуживание</a></h3>
+                        <p>Равным образом постоянный количественный рост и сфера нашей активности</p>
+                    </div>
+                </div>
+                <div class="service-item bottom-margin">
+                    <img class="service-img" src="pict/serv/15.png" alt="Накрытый стол">
+                    <div class="service-item_descr">
+                        <h3><a class="link" href="#">Аренда банкетных залов</a></h3>
+                        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
+                    </div>
+                </div>
+                <div class="service-item right-margin">
+                    <img class="service-img" src="pict/serv/12.png" alt="Бассейн">
+                    <div class="service-item_descr">
+                        <h3><a class="link" href="#">Сауны, бассейны, бани, фитнес-залы</a></h3>
+                        <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img class="service-img" src="pict/serv/carlo-d-agnolo-aFxSh_l4fbY-unsplash.png" alt="Автомобильная стоянка">
+                    <div class="service-item_descr">
+                        <h3><a class="link" href="#">Охраняемые автомобильные стоянки</a></h3>
+                        <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="advantages">
+            <h2>Преимущества</h2>
+            <div class="advant-list">
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/bathtub.svg" alt="Удобства">
+                    <p>Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+                </div>
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/hanger.svg" alt="Порядок">
+                    <p>Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
+                </div>
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/heating.svg" alt="Отопление">
+                    <p>Таким образом реализация плановых заданий играет важную роль для понимания</p>
+                </div>
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/hotel-key.svg" alt="Безопасность">
+                    <p>Повседневная практика показывает, что сложившаяся структура организации</p>
+                </div>
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/parking.svg" alt="Парковка">
+                    <p>Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
+                </div>
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/reception.svg" alt="Круглосуточный ресепшн">
+                    <p>Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса </p>
+                </div>
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/security-box.svg" alt="Наличие сейфа">
+                    <p>Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+                </div>
+                <div class="advant-item">
+                    <img class="advant-pict" src="pict/advantages/swimming-pool.svg" alt="Бассейн">
+                    <p>Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+                </div>
+                <!-- <div class="advant-item test">
+                    <img class="advant-pict" src="pict/advantages/security-box.svg" alt="Наличие сейфа">
+                    <p>Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+                </div>
+                <div class="advant-item test">
+                    <img class="advant-pict" src="pict/advantages/swimming-pool.svg" alt="Бассейн">
+                    <p>Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+                </div> -->
+            </div>
+        </section>
+    
+        <section class="location">
+            <h2>Размещение</h2>
+            <div class="location-list">
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/23.png" alt="Вид на бассейн отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">4 698 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 4 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/grey-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona española</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/24.png" alt="Вид на бассейн отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">5 148 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 4 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/grey-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona son típicas</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/26.png" alt="Вид на бассейн отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">6 254 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 5 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona de la guerra</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/28.png" alt="Вид на бассейн отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">6 320 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 5 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona mentira piadosa</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/30.png" alt="Вид на бассейн отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">6 457 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 4 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/grey-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona empujar la creatividad</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/31.png" alt="Вид на бассейн отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">6 490 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 4 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/grey-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona el retorno</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/27.png" alt="Вид на бассейн отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">6 505 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 5 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona enfermo terminó</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <img class="location-pict" src="pict/placing/29.png" alt="Вид на здание отеля">
+                    <div class="location-about">
+                        <div class="location-price-and-rating">
+                            <div class="location-price"><span class="preposition">от</span> <span class="location-exact-price">6 824 р</span> / ночь</div>
+                            <div class="location-rating">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="Рейтинг отеля 4 из 5">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/yellow-star.png" alt="">
+                                <img class="rating-star" src="pict/placing/grey-star.png" alt="">
+                            </div>
+                        </div>
+                        <h4>Lagoona suerte siguió siempre</h4>
+                        <div class="location-city">Барселона, Испания</div>
+                        <a class="appartmet-button btn" href="#">Номера</a>
+                    </div>
+                </div>
+                <div class="location-item location-all-variations">
+                    <a class="location-var-button link" href="#">Посмотреть все варианты</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <div class="contacts-types">
+                <div class="contacts-one-type">
+                    <h3>Адрес</h3>
+                    <div class="contacts-info">Москва, улица Юности, дом 5 строение 4, офис 2</div>
+                </div>
+                <div class="contacts-one-type">
+                    <h3>Телефоны</h3>
+                    <div class="contacts-info">
+                        <a class="contacts-info-tel" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                        <a class="contacts-info-tel" href="tel:+74950050544">+7 (495) 005-05-44</a>
+                    </div>
+                </div>
+                <div class="contacts-one-type">
+                    <h3>E-mail</h3>
+                    <div class="contacts-info">
+                        <div class="contacts-email"><a href="lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования</div>
+                        <div class="contacts-email"><a href="hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам сотрудничества</div>
+                    </div>
+                </div>
+                <div class="contacts-one-type">
+                    <h3>График</h3>
+                    <div class="contacts-info">Понедельник - пятница, <br>
+                        с 10:00 до 19:00</div>
+                </div>
+                <div class="contacts-one-type">
+                    <a class="contacts-btn btn" href="#">Построить маршрут</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-block">
+            <div class="feedback-block_content">
+                <h2>Напишите нам</h2>
+                <form class="feedback-field" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                    <input class="feedback-item" type="text" name="userName" id="userName" placeholder="Имя">
+                    <input class="feedback-item" type="tel" name="userPhone" id="userPhone" placeholder="+7" required minlength="5" maxlength="15">
+                    <textarea class="feedback-item" name="userMessage" id="userMessage" placeholder="Сообщение..." cols="30" rows="4"></textarea>
+                    <button class="feedback-item feedback-btn btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="clear-block"></div>
+
+    </main>
+
+    <footer>
+        <div class="footer-block">
+            <div class="footer-text">
+                <div class="footer-text-law-info">
+                    <div class="footer-text-item">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</div>
+                    <div class="footer-text-item">Представленная на сайте информация
+                        носит справочный характер
+                        и не является публичной офертой</div>
+                    <a class="footer-text-item footer-policy link" href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="footer-text-contact-info">
+                    <div class="footer-text-contact-item footer-text-adress">11710, улица Юности, дом 5 строение 4, офис 2</div>
+                    <div class="footer-text-contact-item">
+                        <a href="tel:+74995356434">+7 (499) 535-64-34</a>
+                        <a href="tel:+74950050544">+7 (495) 005-05-44</a>
+                    </div>
+                    <div class="footer-text-contact-item">
+                        <a href="lg.oona@mail.ru">lg.oona@mail.ru</a>
+                        <a href="hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <a class="social-item social-link" href="#"><img class="social-item-img" src="pict/footer/tripadvisor.png" alt="Tripadvisor"></a>
+                <a class="social-item social-link" href="#"><img class="social-item-img" src="pict/footer/twitter.png" alt="Twitter"></a>
+                <a class="social-item social-link" href="#"><img class="social-item-img" src="pict/footer/facebook.png" alt="Facebook"></a>
+                <a class="social-item social-link" href="#"><img class="social-item-img" src="pict/footer/social.png" alt="VK"></a>
+                <a class="social-item social-link" href="#"><img class="social-item-img" src="pict/footer/google-plus-social-logotype.png" alt="Google+"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
